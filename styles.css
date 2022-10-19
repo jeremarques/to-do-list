@@ -1,0 +1,86 @@
+/* Resets and Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+html,
+body,
+button,
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Base styles */
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .content {
+  width: min(600px ,70%);
+}
+
+/* Form styles */
+
+body .content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #F8F9FB;
+  box-shadow: 0px 8px 15px -3px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-top: 18px;
+}
+body .content form > input {
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dadada;
+  margin-bottom: 10px;
+}
+body .content form > button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  background-color: #71A5DE;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+body .content form > button:hover {  
+  background-color: #83B0E1;
+}
+
+/* ul Styles */
+
+#tasks {
+  width: 100%;
+  margin-top: 28px;
+}
+#tasks > .task {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #F8F9FB;
+  box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
+}
+#tasks > .task > .delete {
+  border: none;
+  background: none;
+  font-weight: 700;
+  color: #c45151;
+  font-size: 14px;
+  cursor: pointer;
+}
